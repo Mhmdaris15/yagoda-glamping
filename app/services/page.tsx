@@ -1,6 +1,7 @@
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import { assetPath } from "@/lib/config";
 
 export default function ServicesPage() {
     return (
@@ -49,14 +50,14 @@ export default function ServicesPage() {
                                     <img
                                         alt="SPA бане"
                                         className="w-full h-full object-cover"
-                                        src="/images/spa/spa-1.jpg"
+                                        src={assetPath("/images/spa/spa-1.jpg")}
                                     />
                                 </div>
                                 <div className="rounded-xl overflow-hidden hover-zoom aspect-[3/4]">
                                     <img
                                         alt="Зона отдыха"
                                         className="w-full h-full object-cover"
-                                        src="/images/spa/spa-2.jpg"
+                                        src={assetPath("/images/spa/spa-2.jpg")}
                                     />
                                 </div>
                             </div>
@@ -79,21 +80,21 @@ export default function ServicesPage() {
                                     <img
                                         alt="Банный чан на дровах"
                                         className="w-full h-full object-cover"
-                                        src="/images/spa/chan-1.jpg"
+                                        src={assetPath("/images/spa/chan-1.jpg")}
                                     />
                                 </div>
                                 <div className="rounded-xl overflow-hidden hover-zoom aspect-square">
                                     <img
                                         alt="Чан вечером"
                                         className="w-full h-full object-cover"
-                                        src="/images/spa/chan-2.jpg"
+                                        src={assetPath("/images/spa/chan-2.jpg")}
                                     />
                                 </div>
                                 <div className="rounded-xl overflow-hidden hover-zoom aspect-square">
                                     <img
                                         alt="Отдых на природе"
                                         className="w-full h-full object-cover"
-                                        src="/images/spa/spa-3.jpg"
+                                        src={assetPath("/images/spa/spa-3.jpg")}
                                     />
                                 </div>
                             </div>
@@ -153,21 +154,21 @@ export default function ServicesPage() {
                                     <img
                                         alt="Банкетный зал"
                                         className="w-full h-full object-cover"
-                                        src="/images/restaurant/hall-1.jpg"
+                                        src={assetPath("/images/restaurant/hall-1.jpg")}
                                     />
                                 </div>
                                 <div className="rounded-xl overflow-hidden hover-zoom aspect-square">
                                     <img
                                         alt="Интерьер зала"
                                         className="w-full h-full object-cover"
-                                        src="/images/restaurant/hall-2.jpg"
+                                        src={assetPath("/images/restaurant/hall-2.jpg")}
                                     />
                                 </div>
                                 <div className="rounded-xl overflow-hidden hover-zoom aspect-square">
                                     <img
                                         alt="Сервировка"
                                         className="w-full h-full object-cover"
-                                        src="/images/restaurant/hall-3.jpg"
+                                        src={assetPath("/images/restaurant/hall-3.jpg")}
                                     />
                                 </div>
                             </div>
@@ -190,28 +191,28 @@ export default function ServicesPage() {
                                     <img
                                         alt="Корпоратив на природе"
                                         className="w-full h-full object-cover"
-                                        src="/images/restaurant/event-1.jpg"
+                                        src={assetPath("/images/restaurant/event-1.jpg")}
                                     />
                                 </div>
                                 <div className="rounded-xl overflow-hidden hover-zoom aspect-square">
                                     <img
                                         alt="Праздник"
                                         className="w-full h-full object-cover"
-                                        src="/images/restaurant/event-2.jpg"
+                                        src={assetPath("/images/restaurant/event-2.jpg")}
                                     />
                                 </div>
                                 <div className="rounded-xl overflow-hidden hover-zoom aspect-square">
                                     <img
                                         alt="Территория"
                                         className="w-full h-full object-cover"
-                                        src="/images/territory/nature-4.jpg"
+                                        src={assetPath("/images/territory/nature-4.jpg")}
                                     />
                                 </div>
                                 <div className="rounded-xl overflow-hidden hover-zoom aspect-square">
                                     <img
                                         alt="Площадка"
                                         className="w-full h-full object-cover"
-                                        src="/images/territory/nature-3.jpg"
+                                        src={assetPath("/images/territory/nature-3.jpg")}
                                     />
                                 </div>
                             </div>

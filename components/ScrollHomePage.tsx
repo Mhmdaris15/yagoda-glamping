@@ -4,6 +4,7 @@ import React, { useEffect, useRef } from "react";
 import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { assetPath } from "@/lib/config";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,25 +14,25 @@ const services = [
         name: "SPA",
         description:
             "Расслабьтесь в уютной бане прямо в сердце природы. Тёплый пар, натуральные ароматы дерева и ощущение полного комфорта.",
-        image: "/images/spa/spa-1.jpg",
+        image: assetPath("/images/spa/spa-1.jpg"),
     },
     {
         name: "Банный чан",
         description:
             "У каждого домика — собственный банный чан на дровах. Свежий воздух, потрескивание дров, теплое парение под открытым небом.",
-        image: "/images/spa/chan-1.jpg",
+        image: assetPath("/images/spa/chan-1.jpg"),
     },
     {
         name: "Банкетный зал",
         description:
             "Комфортные зоны отдыха, ухоженная территория, детали продуманы с заботой об экологии и гармонии с окружающим миром.",
-        image: "/images/restaurant/hall-1.jpg",
+        image: assetPath("/images/restaurant/hall-1.jpg"),
     },
     {
         name: "Мероприятия",
         description:
             "Уникальная локация с панорамными видами. Продуманная инфраструктура. Полная конфиденциальность и уединение.",
-        image: "/images/restaurant/event-1.jpg",
+        image: assetPath("/images/restaurant/event-1.jpg"),
     },
 ];
 
@@ -40,19 +41,19 @@ const cabins = [
         slug: "family-one",
         title: "Домик Family One",
         desc: "Две спальни, кухня-гостиная, ванная. До 6 гостей.",
-        image: "/images/cabin-family-one/hero.jpg",
+        image: assetPath("/images/cabin-family-one/hero.jpg"),
     },
     {
         slug: "family-two",
         title: "Домик Family Two",
         desc: "Две спальни, раскладной диван, душевая. До 6 гостей.",
-        image: "/images/cabin-family-two/hero.jpg",
+        image: assetPath("/images/cabin-family-two/hero.jpg"),
     },
     {
         slug: "studio",
         title: "Домик Studio",
         desc: "Студия с перегородкой, мини-кухня. До 4 гостей.",
-        image: "/images/cabin-studio/hero.jpg",
+        image: assetPath("/images/cabin-studio/hero.jpg"),
     },
 ];
 
@@ -268,7 +269,7 @@ export default function ScrollHomePage() {
                     <img
                         alt="Глэмпинг YAGODA"
                         className="hero-bg-img w-full h-full object-cover will-change-transform"
-                        src="/images/hero/hero-main.jpg"
+                        src={assetPath("/images/hero/hero-main.jpg")}
                     />
                     <div className="absolute inset-0 hero-overlay" />
                 </div>
@@ -320,7 +321,7 @@ export default function ScrollHomePage() {
                     <img
                         alt="Природа"
                         className="philosophy-img absolute inset-0 w-full h-full object-cover will-change-transform"
-                        src="/images/territory/nature-1.jpg"
+                        src={assetPath("/images/territory/nature-1.jpg")}
                     />
                 </div>
             </section>
@@ -364,8 +365,8 @@ export default function ScrollHomePage() {
                             <p
                                 key={service.name}
                                 className={`service-desc text-sand/60 text-sm leading-relaxed max-w-md ${i === 0
-                                        ? "opacity-100 relative"
-                                        : "opacity-0 absolute top-0 left-0"
+                                    ? "opacity-100 relative"
+                                    : "opacity-0 absolute top-0 left-0"
                                     }`}
                             >
                                 {service.description}
@@ -404,7 +405,7 @@ export default function ScrollHomePage() {
                     <img
                         alt="Природа вокруг"
                         className="nature-bg w-full h-full object-cover will-change-transform"
-                        src="/images/territory/nature-2.jpg"
+                        src={assetPath("/images/territory/nature-2.jpg")}
                     />
                     <div className="absolute inset-0 bg-forest/20" />
                 </div>
@@ -413,7 +414,7 @@ export default function ScrollHomePage() {
                     <img
                         alt="Прогулка"
                         className="w-full aspect-[4/3] object-cover rounded-sm mb-6"
-                        src="/images/territory/territory-kids.jpg"
+                        src={assetPath("/images/territory/territory-kids.jpg")}
                     />
                     <div className="text-sand">
                         <span className="font-serif text-7xl lg:text-8xl block mb-2 text-sand/60">
@@ -519,7 +520,7 @@ export default function ScrollHomePage() {
                     <img
                         alt="Дети на природе"
                         className="absolute inset-0 w-full h-full object-cover"
-                        src="/images/territory/nature-5.jpg"
+                        src={assetPath("/images/territory/nature-5.jpg")}
                     />
                 </div>
                 <div className="bg-forest flex items-center justify-center p-12 lg:p-20 min-h-[50vh] lg:min-h-screen">
@@ -568,7 +569,7 @@ export default function ScrollHomePage() {
                             <img
                                 alt="Территория глэмпинга"
                                 className="w-full h-full object-cover opacity-70"
-                                src="/images/territory/nature-3.jpg"
+                                src={assetPath("/images/territory/nature-3.jpg")}
                             />
                             <div className="absolute inset-0 flex items-center justify-center">
                                 <span className="text-cream/50 text-sm uppercase tracking-widest bg-forest/60 px-6 py-3 rounded">

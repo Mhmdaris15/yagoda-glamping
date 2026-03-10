@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import MapSection from "@/components/MapSection";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { assetPath } from "@/lib/config";
 
 /* ── Cabin Data ── */
 interface CabinData {
@@ -19,7 +20,7 @@ const cabins: Record<string, CabinData> = {
     "family-one": {
         title: "Домик Family One",
         slug: "family-one",
-        heroImage: "/images/cabin-family-one/hero.jpg",
+        heroImage: assetPath("/images/cabin-family-one/hero.jpg"),
         description:
             "Вдохните свежий лесной воздух и отдохните в настоящем комфорте. Домик Family one — это оазис гармонии с природой и удобства, где каждая деталь создана для вашего удовольствия.",
         whatAwaits: [
@@ -29,18 +30,18 @@ const cabins: Record<string, CabinData> = {
         ],
         capacity: "Общая вместимость в домике — 6 человек.",
         gallery: [
-            "/images/cabin-family-one/interior-1.jpg",
-            "/images/cabin-family-one/interior-2.jpg",
-            "/images/cabin-family-one/interior-3.jpg",
-            "/images/cabin-family-one/interior-4.jpg",
-            "/images/cabin-family-one/interior-5.jpg",
-            "/images/cabin-family-one/interior-6.jpg",
+            assetPath("/images/cabin-family-one/interior-1.jpg"),
+            assetPath("/images/cabin-family-one/interior-2.jpg"),
+            assetPath("/images/cabin-family-one/interior-3.jpg"),
+            assetPath("/images/cabin-family-one/interior-4.jpg"),
+            assetPath("/images/cabin-family-one/interior-5.jpg"),
+            assetPath("/images/cabin-family-one/interior-6.jpg"),
         ],
     },
     "family-two": {
         title: "Домик Family Two",
         slug: "family-two",
-        heroImage: "/images/cabin-family-two/hero.jpg",
+        heroImage: assetPath("/images/cabin-family-two/hero.jpg"),
         description:
             "Откройте для себя новый уровень уюта – Домик Family two нашего глэмпинга ждёт именно вас! Здесь комфорт гармонично сочетается с близостью к природе и продуманным функционалом.",
         whatAwaits: [
@@ -52,18 +53,18 @@ const cabins: Record<string, CabinData> = {
         ],
         capacity: "Общая вместимость — 6 человек.",
         gallery: [
-            "/images/cabin-family-two/interior-1.jpg",
-            "/images/cabin-family-two/interior-2.jpg",
-            "/images/cabin-family-two/interior-3.jpg",
-            "/images/cabin-family-two/interior-4.jpg",
-            "/images/cabin-family-two/interior-5.jpg",
-            "/images/cabin-family-two/interior-6.jpg",
+            assetPath("/images/cabin-family-two/interior-1.jpg"),
+            assetPath("/images/cabin-family-two/interior-2.jpg"),
+            assetPath("/images/cabin-family-two/interior-3.jpg"),
+            assetPath("/images/cabin-family-two/interior-4.jpg"),
+            assetPath("/images/cabin-family-two/interior-5.jpg"),
+            assetPath("/images/cabin-family-two/interior-6.jpg"),
         ],
     },
     studio: {
         title: "Домик Studio",
         slug: "studio",
-        heroImage: "/images/cabin-studio/hero.jpg",
+        heroImage: assetPath("/images/cabin-studio/hero.jpg"),
         description:
             "Мечтаете сбежать из города вдвоём, но не готовы отказаться от комфорта? У нас для вас отличная новость — в нашем глэмпинге доступен Домик Studio!",
         whatAwaits: [
@@ -75,10 +76,10 @@ const cabins: Record<string, CabinData> = {
         ],
         capacity: "Вместимость — до 4 человек.",
         gallery: [
-            "/images/cabin-studio/interior-1.jpg",
-            "/images/cabin-studio/interior-2.jpg",
-            "/images/cabin-studio/interior-3.jpg",
-            "/images/cabin-studio/interior-4.jpg",
+            assetPath("/images/cabin-studio/interior-1.jpg"),
+            assetPath("/images/cabin-studio/interior-2.jpg"),
+            assetPath("/images/cabin-studio/interior-3.jpg"),
+            assetPath("/images/cabin-studio/interior-4.jpg"),
         ],
     },
 };
